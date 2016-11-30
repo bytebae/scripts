@@ -32,4 +32,4 @@
 # */1 * * * * eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)"; /usr/bin/notify-send hi
 ##################
 
-*/5 * * * * eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";/usr/bin/notify-send -i /home/null/Pictures/notify-send\ resources/images/jarvis1.jpg  "Jarvis Message:" "Core temp: $(sensors|grep 'Physical id 0'|grep -o \+[0-9][0-9]\.[0-9])"
+*/5 * * * * eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";/usr/bin/notify-send -i /home/null/Pictures/notify-send\ resources/images/jarvis1.jpg "Jarvis Message:" "core_temp: $(sensors|grep 'Physical id 0'|grep -o \+[0-9][0-9]\.[0-9]) C\n$(sensors|grep cpu_fan)"
