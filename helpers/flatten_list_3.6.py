@@ -1,4 +1,4 @@
-# Run with python3.6 as it uses the yield from keyword
+# Run with python 3 as it uses the yield from keyword
 # This is approach applies to lists of lists, numbers and other mixed containers types
 
 from collections import Iterable
